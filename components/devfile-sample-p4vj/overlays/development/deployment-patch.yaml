@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-p4vj
+  namespace: e2e-demos-tzfj-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:ffec2bc0b3ac1be6cd12a4cc4952131fd02a962e3f211b952e67c8c46065089f
+        name: my-nodejs
+        resources: {}
+status: {}
