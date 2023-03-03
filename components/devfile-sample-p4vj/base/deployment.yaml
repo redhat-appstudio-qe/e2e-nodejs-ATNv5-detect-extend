@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: devfile-sample-p4vj
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images-protected:ATNv5-devfile-sample-p4vj
+      - image: quay.io/redhat-appstudio-qe/test-images-protected@sha256:ffec2bc0b3ac1be6cd12a4cc4952131fd02a962e3f211b952e67c8c46065089f
         name: my-nodejs
         ports:
         - containerPort: 3001
